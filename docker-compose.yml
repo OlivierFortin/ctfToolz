@@ -1,0 +1,9 @@
+services: 
+  kaliCTF:
+    container_name: kaliCTF
+    image: . 
+    stdin_open : true
+    tty: true
+    volumes:
+      - ./challenges:/home/${USER}
+      - ./tools:/home/${USER}/tools
